@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GardenUpf — Cozy Virtual Garden</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><div class="logo">✿</div><div><h1>GardenUpf</h1><p>your little happy garden</p></div></div>
+  <div class="stats"><div class="pill">🪙 <b id="coins">120</b></div><div class="pill">⭐ <b id="level">1</b></div><button class="icon" id="reset">↻</button></div>
+</header>
+
+<section class="hero">
+  <div><span class="eyebrow">MY LITTLE GARDEN</span><h2>Grow something beautiful.</h2><p>Tanam, rawat, panen, lalu buat kebun kecilmu semakin hidup.</p>
+  <div class="xp"><div><span>Garden XP</span><span id="xpText">0 / 100</span></div><i><b id="xpBar"></b></i></div></div>
+  <div class="sun"><strong id="day">Day 1</strong><span id="period">Morning</span><em>☀️</em></div>
+</section>
+
+<section class="layout">
+<div class="garden-card">
+  <div class="heading"><div><span class="eyebrow">GARDEN</span><h3>Meadow Garden</h3></div><button class="soft" id="decorate">✦ Decorate</button></div>
+  <div class="selected-seed" id="selectedSeed"></div>
+  <div class="garden" id="garden"></div>
+  <p class="tip">🌱 <b>Cara main:</b> pilih seed di sebelah kanan → klik petak kosong di Meadow Garden → tunggu sampai matang → klik tanaman untuk Harvest.</p>
+</div>
+<aside>
+  <div class="panel"><div class="heading compact"><div><span class="eyebrow">SEED BAG</span><h3>Choose a seed</h3></div><small>6 seeds</small></div>
+  <p class="seed-help">Klik salah satu seed untuk memilihnya.</p>
+  <div id="seeds"></div>
+</div>
+  <div class="panel"><div class="heading compact"><div><span class="eyebrow">YOUR DAY</span><h3>Garden journal</h3></div></div><div id="journal"></div></div>
+</aside>
+</section>
+
+<section class="shop"><div class="heading"><div><span class="eyebrow">GARDEN SHOP</span><h3>Little upgrades</h3></div><p>Make your garden happier.</p></div><div class="shop-grid" id="shop"></div></section>
+
+<div class="toast" id="toast"></div>
+<div class="modal hidden" id="modal"><div class="dialog"><button class="close" id="close">×</button><span class="eyebrow">DECORATE</span><h3>Add a little charm</h3><p>Hiasi tamanmu dengan dekorasi kecil yang cozy.</p><div id="decorList"></div></div></div>
+<footer>GardenUpf · made with tiny seeds & big dreams 🌱</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
